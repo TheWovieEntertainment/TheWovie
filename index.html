@@ -2,11 +2,338 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>电影资讯 | WE</title>
+
+	<script src="js/main.js" type="text/javascript"></script>
+    <!--轮播图js-->
+    <script src="js/slideshow.js" type="text/javascript"></script>
+       
+	<link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    
+    <!-- 导航 -->
+    <div class="g-hd">
+		<div class="m-hd f-pr f-cb">
+			<div class="title f-fl"><h1 class="u-title-en f-fl">WE</h1><span class="f-fl"></span><h1 class="u-title-ch f-fl">FilmReview</h1></div>
+			<div class="usrAtt f-fl "><div class="usrAttOp f-fl" onclick="loginYN()"><span class="usrAttText">关注</span></div><p class="usrAttStatis f-fl">粉丝45</p></div>
+			<div class="usrAtt-af f-fl " style="display:none;"><div class="usrAttOp f-fl"><span class="usrAttText">已关注</span><a href="javascript:attCancel();" class="usrAttCancel">取消</a></div><p class="usrAttStatis f-fl">粉丝46</p></div>
+			<div class="nav f-fr"><a href="http://open.163.com/"  target="_blank">网易公开课</a><a href="http://study.163.com/"  target="_blank">云课堂</a><a href="http://www.icourse163.org/"  target="_blank">中国大学MOOC</a><a href="" class="search"></a></div>
+		</div>
+	</div>
+	<div class="g-bd">
+		<div class="m-sld f-pr f-cb">
+			<ul class="imgwrap">
+				<a href="http://open.163.com/" target="_blank"><li id="imgon" class="banner banner0" data-index='0'></li></a>
+				<a href="http://study.163.com/" target="_blank"><li class="banner banner1" data-index='1'></li></a>
+				<a href="http://www.icourse163.org/" target="_blank"><li class="banner banner2" data-index='2'></li></a>
+			</ul>
+			<div class="control">
+                <div class="circlewrap f-pr">
+                    <span id="on" class="circle" data-index='0'></span>
+                    <span id="" class="circle" data-index='1'></span>
+                    <span id="" class="circle" data-index='2'></span>
+                </div>
+		    </div>
+	    </div>
+    </div>
+
+<hr>
+
+<!--首页顶部-->
+<div class="lph-picShow idx-picShow clr">
+    <!--首页右侧=-=轮播图-->
+    <div id="container">
+        <div id="list" style="left: -880px;">
+            <img src="img/5.jpg" alt="1"/>
+            <img src="img/1.jpg" alt="1"/>
+            <img src="img/2.jpg" alt="2"/>
+            <img src="img/3.jpg" alt="3"/>
+            <img src="img/4.jpg" alt="4"/>
+            <img src="img/5.jpg" alt="5"/>
+            <img src="img/1.jpg" alt="5"/>
+        </div>
+        <div id="buttons">
+            <span index="1" class="on"></span>
+            <span index="2"></span>
+            <span index="3"></span>
+            <span index="4"></span>
+            <span index="5"></span>
+        </div>
+        <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+        <a href="javascript:;" id="next" class="arrow">&gt;</a>
+    </div>
+
+    <!--首页左侧=-=模块-->
+    <div class="module">
+        <!-- 第一列 -->
+        <div class="rows clr rowOne ">
+            <div class="column line colTxt">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="/banner/homepageUrl/id/2469" target="_blank">对话 “AI 教父” 黄仁勋：人工智能开启 GPU 计算时代                                                        </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="column picTxt">
+                <a href="/banner/homepageUrl/id/2248" target="_blank">
+                    <div class="pic">
+                        <img src="https://static.leiphone.com/uploads/new/homepagerecommend/pic/201705/590a88c6b2ae2.jpg?imageMogr2/thumbnail/!390x390r/gravity/Center/crop/390x390/quality/90" width="195" height="195" />
+                    </div>
+                    <div class="txt">CCF-GAIR 2017全球人工智能与机器人峰会</div>
+                    <div class="cover"></div>
+                </a>
+                <div class="shadow"></div>
+            </div>
+        </div>
+        <!-- 第二列 -->
+        <div class="rows clr">
+            <div class="column line picTxt">
+                <a href="/banner/homepageUrl/id/2326" target="_blank">
+                    <div class="pic">
+                        <img src="https://static.leiphone.com/uploads/new/homepagerecommend/pic/201704/58ef3eecbf1e6.jpg?imageMogr2/thumbnail/!390x390r/gravity/Center/crop/390x390/quality/90" width="195" height="195" />
+                    </div>
+                    <div class="txt">50 多家企业报名【2017AI 最佳雇主】评选，我们期待更多企业加入</div>
+                    <div class="cover"></div>
+                </a>
+                <div class="shadow"></div>
+            </div>
+            <div class="column colTxt">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="/banner/homepageUrl/id/2344" target="_blank">新智造成长榜 2017</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+            
+
+<div class="wrapper">
+    <!--内容左侧-->
+    <div class="index-left">
+        <!-- 精选导读 -->
+        <div class="index-selRead">
+            <div class="title">精选导读</div>
+            <div class="list">
+                <ul class="clr">
+                    <li>
+                        <div class="box">
+                            <div class="pic">
+                                <a href="https://www.leiphone.com/latest/index/id/4033" target="_blank">
+                                    <img src="img/selread1.jpg" alt="" />
+                                </a>
+                            </div>
+                            <div class="txt">
+                                <a href="https://www.leiphone.com/latest/index/id/4033" target="_blank">
+                                    WWDC 2017前瞻：除了新版OS和MacBook，还能期待哪些惊喜？
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="pic">
+                                <a href="https://www.leiphone.com/latest/index/id/4034" target="_blank">
+                                    <img src="https://static.leiphone.com/uploads/new/article/pic/201706/5935f6d66771e.jpg?imageMogr2/thumbnail/480x290!/quality/90" alt="" />
+                                </a>
+                            </div>
+                            <div class="txt">
+                                <a href="https://www.leiphone.com/latest/index/id/4034" target="_blank">
+                                    CES Asia上，关于汽车科技的几大看点
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="pic">
+                                <a href="https://www.leiphone.com/latest/index/id/4041" target="_blank">
+                                    <img src="https://static.leiphone.com/uploads/new/latest/593a7ac06ff55.png?imageMogr2/thumbnail/480x290!/quality/90" alt="" />
+                                </a>
+                            </div>
+                            <div class="txt">
+                                <a href="https://www.leiphone.com/latest/index/id/4041" target="_blank">
+                                    腾讯守护者火线灭“毒”，24小时锁定目标协助安阳警方捣毁手机勒索病毒产业链
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="pic">
+                                <a href="https://www.leiphone.com/latest/index/id/4036" target="_blank">
+                                    <img src="https://static.leiphone.com/uploads/new/article/pic/201706/5934cc096bd14.jpg?imageMogr2/thumbnail/480x290!/quality/90" alt="" />
+                                </a>
+                            </div>
+                            <div class="txt">
+                                <a href="https://www.leiphone.com/latest/index/id/4036" target="_blank">
+                                    微软副院长周明：NLP目前存在的问题、以及未来的发展方向
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="pic">
+                                <a href="https://www.leiphone.com/latest/index/id/4040" target="_blank">
+                                    <img src="https://static.leiphone.com/uploads/new/article/pic/201706/5937be6553ab6.jpg?imageMogr2/thumbnail/480x290!/quality/90" alt="" />
+                                </a>
+                            </div>
+                            <div class="txt">
+                                <a href="https://www.leiphone.com/latest/index/id/4040" target="_blank">
+                                    专访英特尔中国研究院院长宋继强：gcForest开源了，该用什么硬件来训练?
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <div class="pic">
+                                <a href="https://www.leiphone.com/latest/index/id/4038" target="_blank">
+                                    <img src="https://static.leiphone.com/uploads/new/article/pic/201706/5935c847e0213.png?imageMogr2/thumbnail/480x290!/quality/90" alt="" />
+                                </a>
+                            </div>
+                            <div class="txt">
+                                <a href="https://www.leiphone.com/latest/index/id/4038" target="_blank">
+                                    苹果全面拥抱 AR/VR：iOS 一夜成全球最大 AR 平台 | WWDC17
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 精选导读end -->
+
+        <!-- 最新文章 -->     
+        <div class="lph-pageList index-pageList">
+            <div class="list">
+                <ul class="clr">
+                    <li>
+                        <div class="box">
+                            <div class="img">
+                                <a href="https://www.leiphone.com/news/201706/jVSRqsk5MLUflccF.html"  target="_blank">
+                                    <img class='lazy' src="img/list1.jpg" title="面向自动驾驶的高精度地图测绘，博世选择了TomTom作为合作伙伴" alt="" />
+                                </a>
+                            </div>
+                            <div class="word">
+                                <h3>
+                                <a href="https://www.leiphone.com/news/201706/jVSRqsk5MLUflccF.html" target="_blank" title="面向自动驾驶的高精度地图测绘，博世选择了TomTom作为合作伙伴" class="headTit">
+                                    面向自动驾驶的高精度地图测绘，博世选择了TomTom作为合作伙伴
+                                </a>
+                                </h3>
+                                <!--description-->
+                                <div class="des">
+                                    该技术将针对自动驾驶汽车应用而研发，集成博世的“雷达道路标记”技术，使车辆位置服务精度达到厘米级。
+                                </div>
+                                <div class="msg clr">
+                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                        <img src="img/innovation.jpg" width="50" height="50" alt=""/>Innovation
+                                    </a>
+                                    <div class="time">13分钟前</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="box">
+                            <div class="img">
+                                <a href="https://www.leiphone.com/news/201706/jVSRqsk5MLUflccF.html"  target="_blank">
+                                    <img class='lazy' src="img/list1.jpg" title="面向自动驾驶的高精度地图测绘，博世选择了TomTom作为合作伙伴" alt="" />
+                                </a>
+                            </div>
+                            <div class="word">
+                                <h3>
+                                <a href="https://www.leiphone.com/news/201706/jVSRqsk5MLUflccF.html" target="_blank" title="面向自动驾驶的高精度地图测绘，博世选择了TomTom作为合作伙伴" class="headTit">
+                                    面向自动驾驶的高精度地图测绘，博世选择了TomTom作为合作伙伴
+                                </a>
+                                </h3>
+                                <!--description-->
+                                <div class="des">
+                                    该技术将针对自动驾驶汽车应用而研发，集成博世的“雷达道路标记”技术，使车辆位置服务精度达到厘米级。
+                                </div>
+                                <div class="msg clr">
+                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                        <img src="img/innovation.jpg" width="50" height="50" alt=""/>panaiwang
+                                    </a>
+                                    <div class="time">13分钟前</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="loadMore">
+                    <a href="javascript:;">加载更多<em></em></a>
+                </div>
+                
+                <div class="lph-page">
+                    <a class="prev" href="jacascript:void(0)"><em></em></a>
+                    <a class="next" href="https://www.leiphone.com/page/4"><em></em></a>
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+
+    </div>
+    <!--内容左侧-->
+</div>
+
+
+
+
+
+
+
+
+<!--footer-->
+<!--<div class="g-ft">
+    <div class="m-ftwrap f-pr f-cb">
+
+        <div class="ftleft f-fl">
+            <div class="title f-cb"><h1 class="u-title-en f-fl">WE</h1><span class="f-fl"></span><h1 class="u-title-ch f-fl">WE电影资讯部</h1></div>
+            <p class="cprt">©2014 icourse163.org 浙ICP备08114786号-1</br>icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
+        </div>
+
+        <div class="ftright f-fr f-cb">
+            <div class="link f-fl">
+                <p>友情链接：</p>
+                <a href="http://open.163.com/"  target="_blank">网易公开课</a></br>
+                <a href="http://study.163.com/"  target="_blank">网易云课堂</a></br>
+                <a href="http://www.icourse163.org/"  target="_blank">中国大学MOOC</a>
+            </div>
+
+            <div class="about f-fl">
+                <p>我们：</p>
+                <a href="http://study.163.com/about/aboutus.htm#/about?aboutType=1"  target="_blank">关于</a></br>
+                <a href="http://study.163.com/about/aboutus.htm#/about?aboutType=2"  target="_blank">联系</a></br>
+                <a href="http://weibo.com/study163?sudaref=study.163.com"  target="_blank">关注</a><a href="http://weibo.com/study163?sudaref=study.163.com"  target="_blank" class="atweibo"></a>
+            </div>
+
+            <div class="more f-fl">
+                <p>更多：</p>
+                <a href="http://study.163.com/about/aboutus.htm#/about?aboutType=4"  target="_blank">常见问题</a></br>
+                <a href="http://study.163.com/about/aboutus.htm#/about?aboutType=8"  target="_blank">意见反馈</a>
+            </div>
+
+        </div>
+    </div>
+</div>-->
+
+
+
 </body>
 </html>
