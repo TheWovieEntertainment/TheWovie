@@ -1,0 +1,683 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册 | WE</title>
+    <!-- 别忘记此处的meta标签，确保IE都是在标准模式下渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <!--<link rel="stylesheet" href="http://img.ikanchai.com/templates/ikanchai/css/cmstop.basecolor.css" />-->
+
+    <!--<link type="text/css" rel="stylesheet" href="singup.css" />-->
+
+    <style>
+        /*reset.css*/
+html, 
+body, 
+div, 
+form, 
+p, 
+a, 
+h1, h2, h3, h4, h5, h6, 
+img, 
+table, td, th, 
+input, span, 
+section, header, footer, nav, article, aside, fieldset, 
+textarea, dl, dt, dd, blockquote, 
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/*a:hover {
+    color: #06c!important;
+}*/
+img {
+    border: none;
+}
+body {
+    font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei";
+    font-size: 16px;
+}
+li,ol,ul {
+    list-style:none;
+}
+em {
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+.hidden {
+    display: none;
+}
+.input{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 4px 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555555;
+    vertical-align: middle;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border:1px solid #d2d2d2;
+    box-shadow: inset 0px 1px 5px #ddd;
+}
+
+.input-text {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 220px;
+}
+.ov {
+    overflow: hidden;
+    zoom:1;
+}
+.fl-r {
+    float: right;
+}
+
+.fl-l {
+    float: left;
+}
+.ie6 .fl-l {
+    float: left;
+    display: inline;
+}
+.pos-r {
+    position: relative;
+}
+.pos-a {
+    position: absolute;
+}
+.margin10 {
+    margin: 10px;
+}
+.margin-b-20 {
+    margin-bottom: 20px;
+}
+.margin-r-20 {
+    margin-right: 20px;
+}
+.margin-l-20 {
+    margin-left: 20px;
+}
+.hr10 {
+    height: 10px;
+}
+.hr15 {
+    height: 15px;
+}
+.hr20 {
+    height: 20px;
+}
+.hr30 {
+    height: 30px;
+}
+.hr40 {
+    height: 40px;
+}
+.clear {
+    clear: both;
+}
+
+.button1 {
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 16px;
+    display: inline-block;
+}
+.load-button {
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.align-c {
+    text-align: center;
+}
+.align-r {
+    text-align: right;
+}
+.fz14 {
+    font-size: 14px;
+}
+.fz16 {
+    font-size: 16px;
+}
+.cor444 {
+    color: #444;
+}
+.b {
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}
+/*base*/
+.column {
+    width: 1000px;
+    margin: 0 auto;
+}
+.w650 {
+    width: 650px;
+}
+.w660 {
+    width: 660px;
+}
+.w300 {
+    width: 300px;
+}
+.ad1000x80 {
+    width: 1000px;
+    height: 80px;
+}
+.ad300x240 {
+    width: 300px;
+    height: 240px;
+}
+.ad660x80 {
+    width: 660px;
+    height: 80px;
+}
+.ad300x90 {
+    width: 300px;
+    height: 90px;
+}
+.ad300x80 {
+    width: 300px;
+    height: 80px;
+}
+.ad1 {
+    background-color: #eee;
+}
+.hline {
+    overflow: hidden;
+    zoom:1;
+    height: 1px;
+}
+.hlinedotted {
+    overflow: hidden;
+    zoom:1;
+    height: 0px;
+}
+/*面包屑*/
+.m-crumb {
+    overflow: hidden;
+    zoom:1;
+}
+.m-crumb a {
+    font-size: 12px;
+    float: left;
+    height: 20px;
+}
+.m-crumb em {
+    background-position: -10px -1054px;
+    float: left;
+    width: 25px;
+    height: 20px;
+}
+
+/*分页*/
+.pagination {
+    
+}
+.pagination a {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 10px;
+    margin-right: 2px;
+}
+.pagination span {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 10px;
+    margin-right: 2px;
+}
+
+/*标题*/
+.m-title-a {
+    height: 28px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.m-title-a .m-title-h2 {
+    font-weight: normal;
+    font-size: 18px;
+    height: 33px;
+    position: absolute;
+    left: 0px;
+}
+.m-title-b {
+    height: 39px;
+}
+.m-title-b .name {
+    font-size: 18px;
+    margin: 10px 15px auto 10px;
+    padding-left: 8px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.m-title-b .summary {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+/*手风琴*/
+.m-accordion {
+    padding-top: 10px;
+}
+.m-accordion-item {
+    margin-bottom: 4px;
+}
+.m-accordion .thumb {
+    margin-right: 10px;
+}
+.m-accordion-thumb {
+    padding-bottom: 8px;
+    padding-top: 10px;
+}
+.ie7 .m-accordion-thumb {
+    padding-top: 0px;
+}
+.m-accordion-item .title {
+    font-size: 14px;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+}
+.m-accordion-item p {
+    padding-top: 8px;
+}
+.m-accordion-item p a {
+    font-size: 14px;
+}
+
+/*模块：图片标题*/
+.m-imagetitle {
+    overflow: hidden;
+    zoom:1;
+}
+.m-imagetitle .item {
+    float: left;
+    width: 142px;
+    /*padding: 20px 0 0 0;*/
+    position: relative;
+}
+.m-imagetitle .item .title {
+    font-size: 12px;
+    height: 46px;
+    display: block;
+    padding-top: 4px;
+}
+
+.m-imagetitle .item.odd {
+    padding-right: 16px;
+}
+.m-imagetitle .item .time {
+    position: absolute;
+    right: 2px;
+    top: 75px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    z-index: 20;
+    font-size: 12px;
+}
+.m-imagetitle .item.odd .time {
+    right: 18px;
+}
+.m-imagetitle .item .thumb-link ,.m-imagetitle .item .thumbbox{
+    width: 140px;
+    height: 105px;
+    display: block;
+}
+.m-imagetitle .overlay {
+    position: absolute;
+    z-index: 12;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    display: none;
+}
+.m-imagetitle .overlay .overlay-play {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+    </style>
+
+    <style>
+        body {
+    color: #333;
+    line-height: 22px;
+    font-family: "微软雅黑","黑体",Arial;
+    background: #f2f2f2 url(../images/page_bg.jpg) repeat-x center top;
+    overflow-x: hidden;
+    font-size: 12px;
+}
+    div {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+    .singup-box {
+    background-color: #eaf2f7;
+}
+.singup-panel {
+    background-color: #fff;
+}
+.singup-panel .inner {
+    padding: 40px 80px 20px 80px;
+}
+.singup-form-left {
+    border-right: 1px solid #eee;
+}
+.singup-line {
+    border-bottom: 1px solid #ddd;
+}
+.active-border-blue {
+    border-color: #0091e4;
+}
+.border-red {
+    border-color: #f15252;
+}
+.label {
+    font-size: 16px;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}
+.input-text {
+    padding: 4px 5px;
+    height: 22px;
+    border: none;
+    font-size: 16px;
+    font-family: Arial,"Microsoft YaHei";
+}
+.input-text:focus {
+    outline:none;
+}
+.submit {
+    border: 0px;
+    padding: 12px 30px;
+}
+.submit.disable {
+    background-color: #bbbbbb;
+}
+a.cor06c {
+    color: #06c;
+}
+a.cor06c:hover {
+    color: #0080ff!important;
+}
+.fz12 {
+    font-size: 12px;
+}
+.margin-l-70 {
+    margin-left: 70px;
+}
+.margin-r-10 {
+    margin-right: 10px;
+}
+.margin-r-60 {
+    margin-right: 60px;
+}
+.hr100 {
+    height: 100px;
+}
+.singup-w70 {
+    width: 70px;
+}
+.singup-w180 {
+    width: 180px;
+}
+.singup-w280 {
+    width: 280px;
+}
+.singup-w300 {
+    width: 300px;
+}
+.singup-w330 {
+    width: 330px;
+}
+.singup-w430 {
+    width: 430px;
+}
+.singup-w430 .input-text {
+    width: 420px;
+}
+.singup-w580 {
+    width: 580px;
+}
+
+.singup-form-right .title {
+    font-size: 14px;
+    color: #777;
+}
+.web-login {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    background-color: #0091e4;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+}
+.web-login:hover {
+    color: #ff0!important;
+}
+.web-login.qq {
+    background-color: #0091e4;
+}
+.web-login.sina {
+    background-color: #f15252;
+}
+.web-login.tqq {
+    background-color: #48b7d5;
+}
+
+/*éªŒè¯*/
+.singup-item {
+    position: relative;
+}
+.singup-item .tip, .singup-item .warn {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.singup-item .tip {
+    top: 5px;
+}
+.singup-item .tip {
+    color: #999;
+    font-size: 12px;
+}
+.singup-item .tip.fz16 {
+    font-size: 16px;
+}
+.singup-item .warn {
+    color: #f15252;
+    width:100%;
+    text-align: right;
+}
+.singup-clear-mobile {
+    clear : both;
+}
+.singup-relative-mobileB20 {
+    position: relative;
+    bottom:20px;
+}
+
+/*å¼¹çª—é‡Œçš„ç‰¹æ®Šè®¾ç½®*/
+.singup-in-dialog .singup-form-right {
+    margin-left: 30px;
+}
+.singup-in-dialog .loginicon {
+    background-image: url(images/login.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+.singup-in-dialog .icon-user {
+    background-position: -30px -24px;
+}
+.singup-in-dialog .icon-pw {
+    background-position: -30px -71px;
+}
+.singup-in-dialog .icon-user.warn {
+    background-position: -30px -133px;
+}
+.singup-in-dialog .icon-pw.warn {
+    background-position: -30px -133px;
+}
+.singup-in-dialog .tip {
+    padding-left: 25px;
+    color: #ddd;
+}
+.singup-in-dialog .warn {
+    color: #f15252;
+}
+.singup-in-dialog .icon-user.active-border-blue {
+    background-position: -30px -296px;
+}
+.singup-in-dialog .icon-pw.active-border-blue {
+    background-position: -30px -182px;
+}
+
+    </style>
+   
+</head>
+<body>
+
+
+    <!-- 用户注册 -->
+    <div class="singup-box">
+        <div class="hr100"></div>
+        <div class="column singup-panel">
+            <div class="inner">
+                <div class="m-title-a">
+                    <h2 class="m-title-h2"><a>用户注册</a></h2>
+                </div>
+                <div class="hr20"></div>
+                <!-- 登录内容 -->
+                <div class="singup-form ov">
+                    <div class="singup-form-left singup-w580 fl-l">
+                        <form action="?app=member&controller=index&action=register" method="POST"  name="registerForm" id="member_registerForm">
+                            <div class="hr20"></div>
+                            <div class="ov">
+                                <label class="label singup-w70 fl-l margin-r-20">用户名</label>
+                                <div class="singup-line singup-item singup-w430 fl-l">
+                                    <!--<p class="pos-a tip">3-16字，可由中文,字母,数字及”_”组成</p>-->
+                                    <input type="text" name="username" id="reg_username" value="" class="input-text js-focus username" />
+                                </div>
+                            </div>
+                            <div class="hr40"></div>
+                            <div class="ov">
+                                <label class="label fl-l singup-w70 margin-r-20">密码</label>
+                                <div class="singup-line singup-item singup-w430 fl-l">
+                                    <!--<p class="pos-a tip">字符长度在6到16个字符之间</p>-->
+                                    <input type="password" name="password" id="reg_password" class="input-text js-focus username" />
+                                </div>
+                            </div>
+                            <div class="hr40"></div>
+                            <div class="ov">
+                                <label class="label fl-l singup-w70 margin-r-20">确认密码</label>
+                                <div class="singup-line singup-item singup-w430 fl-l">
+                                    <input type="password" id="reg_password_check" class="input-text username" name="password_check" />
+                                </div>
+                            </div>
+                            <div class="hr40"></div>
+                            <div class="ov">
+                                <label class="label singup-w70 fl-l margin-r-20">邮箱</label>
+                                <div class="singup-line singup-item singup-w430 fl-l">
+                                    <input id="reg_email" type="text" class="input-text js-focus username" name="email" />
+                                </div>
+                            </div>
+                            <div class="hr40"></div>
+                                                        <div class="">
+                                <label class="label singup-w70 fl-l margin-r-20">手机号码</label>
+                                <div class="singup-line singup-item singup-w430 fl-l">
+                                    <input id="reg_mobile_num" type="text" class="input-text js-focus username" name="mobile" />
+                                </div>
+                            </div>
+                            <div class="hr40 singup-clear-mobile"></div>
+                            <div class="ov" >
+                                <label class="label singup-w70 fl-l margin-r-20">验证码</label>
+                                <div class="singup-line singup-item singup-w430 fl-l">
+                                    <input id="reg_mobile_code" type="text" class="input-text js-focus username" name="reg_mobile_code" />
+                                </div>
+                            </div>
+                                                        <div class="hr30"></div>
+                            <div class="margin-l-70 ov">
+                                <input id="iagree" type="checkbox" class="fl-l" style="margin-top: 2px;margin-right: 10px;" name="" id="" /><span class="fz12 fl-l">我同意</span> <a href="" class="fz12 cor06c fl-l">《本站免责声明》</a>
+                            </div>
+                            
+                            <div class="hr20"></div>
+                            <div class="ov margin-l-70">
+                                <input type="submit" value="注册" disable="disable" class="fl-l submit disable button1 margin-r-20" />
+                                <span class="fz12" style="line-height:40px;">我已是会员 <a href="?app=member&controller=index&action=login" class="fz12 cor06c">马上登录</a></span></div>
+                            <div class="hr40"></div>
+                        </form>
+                    </div>
+
+                    <!--第三方登录-->
+                    <div class="singup-form-right singup-w180 fl-l" style="margin-left:70px;">
+                        <p class="fz16 title">使用第三方账号登录</p>
+                        <div class="hr20"></div>
+                        <div>
+                            <a href="javascript:;" onclick="loginThirdParty(this,'qzone')" class="web-login qq">QQ账户</a>
+                            <div class="hr30"></div>
+                            <a href="javascript:;" onclick="loginThirdParty(this,'sina_weibo')" class="web-login sina">新浪微博</a>
+                            <div class="hr30"></div>
+                            <a href="javascript:;" onclick="loginThirdParty(this,'tencent_weibo')" class="web-login tqq">腾讯微博</a>
+                        </div>
+                    </div>
+                    <!--第三方登录-->
+                </div>
+            </div>
+        </div>
+        <div class="hr100"></div>
+    </div>
+
+ 
+</body>
+</html>
