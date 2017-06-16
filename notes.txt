@@ -1,0 +1,9 @@
+Spark
+Storm
+Hadoop
+cursor: pointer;         鼠标变成小手形状
+border-radius: 20px;     圆角
+display: inline-block    http://zh-tw.learnlayout.com/inline-block.html
+<em></em>标签            告诉浏览器把其中的文本表示为强调的内容。对于所有浏览器来说，这意味着要把这段文字用斜体来显示
+CSS opacity 属性         设置 div 元素的不透明级别
+CSS z-index 属性         设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
