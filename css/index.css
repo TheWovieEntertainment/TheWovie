@@ -9,12 +9,12 @@
 
 *{ margin: 0; padding: 0; text-decoration: none;}
 /*page-top*/
-.page-top{width: 1342px;height: 391px;margin: 0 auto;}
+.page-top{width: 1343px;height: 391px;margin: 0 auto;}
 /*首页左侧=-=轮播图*/
 /*body { padding: 20px;}*/
-#container { width: 941px; height: 391px; overflow: hidden; position: relative;float: left;margin: 0px 1px 0px 0px;}
+#container { width: 942px; height: 391px; overflow: hidden; position: relative;float: left;margin: 0px 1px 0px 0px;}
 #list { width: 6587px; height: 391px; position: absolute; z-index: 1;}
-#list img { float: left; width: 941px; height: 391px}
+#list img { float: left; width: 942px; height: 391px}
 #buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 440px;}
 #buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
 #buttons .on {  background: orangered;}

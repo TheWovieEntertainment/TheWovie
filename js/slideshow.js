@@ -29,10 +29,10 @@ window.onload = function () {
                     else {
                         list.style.left = left + 'px';
                         if(left>-200){
-                            list.style.left = -941 * len + 'px';
+                            list.style.left = -942 * len + 'px';
                         }
-                        if(left<(-941 * len)) {
-                            list.style.left = '-941px';
+                        if(left<(-942 * len)) {
+                            list.style.left = '-942px';
                         }
                         animated = false;
                     }
@@ -70,7 +70,7 @@ window.onload = function () {
                 else {
                     index += 1;
                 }
-                animate(-941);
+                animate(-942);
                 showButton();
             }
             prev.onclick = function () {
@@ -83,7 +83,7 @@ window.onload = function () {
                 else {
                     index -= 1;
                 }
-                animate(941);
+                animate(942);
                 showButton();
             }
 
@@ -96,7 +96,7 @@ window.onload = function () {
                         return;
                     }
                     var myIndex = parseInt(this.getAttribute('index'));
-                    var offset = -941 * (myIndex - index);
+                    var offset = -942 * (myIndex - index);
 
                     animate(offset);
                     index = myIndex;
