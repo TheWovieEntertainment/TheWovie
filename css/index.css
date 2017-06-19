@@ -7,12 +7,14 @@
 .f-thide{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 
 
-/*首页左侧=-=轮播图*/
 *{ margin: 0; padding: 0; text-decoration: none;}
-body { padding: 20px;}
-#container { width: 880px; height: 391px; overflow: hidden; position: relative;float: left;margin: 0px 1px 0px 0px;}
-#list { width: 6160px; height: 391px; position: absolute; z-index: 1;}
-#list img { float: left; width: 880px; height: 391px}
+/*page-top*/
+.page-top{width: 1343px;height: 391px;margin: 0 auto;}
+/*首页左侧=-=轮播图*/
+/*body { padding: 20px;}*/
+#container { width: 942px; height: 391px; overflow: hidden; position: relative;float: left;margin: 0px 1px 0px 0px;}
+#list { width: 6587px; height: 391px; position: absolute; z-index: 1;}
+#list img { float: left; width: 942px; height: 391px}
 #buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 440px;}
 #buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
 #buttons .on {  background: orangered;}
@@ -23,7 +25,7 @@ body { padding: 20px;}
 #next { right: 6px;}
 
 /*首页右侧=-=模块*/
-.page-top .module{overflow: hidden;width: 391px;height: 391px;}
+.page-top .module{overflow: hidden;width: 400;height: 391px;}
 .page-top .module .column{width: 195px;float: left;height:195px;position: relative;overflow: hidden;}
 .page-top .module .rows .colTxt{background: #dde3e5;}
 .page-top .module .rows .colTxt a{color: #30373B;}
@@ -63,7 +65,7 @@ body { padding: 20px;}
 
 /*body=-=info*/
 .wrapper{width: 1200px; margin: 40px auto;}
-/*index左侧*/
+/*info左侧*/
 .index-left{width: 810px;position: relative;float: left;margin: 0px;}
 
 .index-selRead{margin-top: 0px;}

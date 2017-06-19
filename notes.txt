@@ -9,3 +9,4 @@ CSS opacity 属性         设置 div 元素的不透明级别
 CSS z-index 属性         设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
 CSS zoom    属性         normal | <number> | <percentage>设置或检索对象的缩放比例。
 CSS :after 选择器        :after 选择器在被选元素的内容后面插入内容。
+CSS overflow 属性        overflow 属性规定当内容溢出元素框时发生的事情

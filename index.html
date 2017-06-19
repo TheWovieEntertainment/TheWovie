@@ -16,14 +16,16 @@
     .serKesy-list .list a{float: left;margin:0 15px 15px 0;padding: 0 15px;background: #fff;color: #5e6b73;font-size: 14px;height: 30px;line-height: 30px;border:1px solid #E8ECEF;border-radius: 16px;-webkit-border-radius: 16px;}
     .serKesy-list .list a:hover{background: #a0aebc;border-color: #a0aebc;color: #fff;}
     
-    #ad a img{width: 100%;}
+    #ad{height: 200px; text-align: center;background-color: black;padding-top: 20px;}
     </style>
 
-    <script>
-        function fade(){
-            document.getElementById("ad").style.display="none";
-        }
-        setTimeout("fade()",5000);
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            setTimeout(function(){$("#ad").slideUp(600);
+            },1200);
+            
+        });
     </script>
 </head>
 <body>
@@ -68,9 +70,9 @@
 
 <!--首页顶部-->
 <div class="page-top">
-    <!--首页右侧=-=轮播图-->
+    <!--首页左侧=-=轮播图-->
     <div id="container">
-        <div id="list" style="left: -880px;">
+        <div id="list" style="left: -942px;">
             <img src="img/container3.jpg" alt="1"/>
             <img src="img/1.jpg" alt="1"/>
             <img src="img/container4.jpg" alt="2"/>
@@ -90,7 +92,7 @@
         <a href="javascript:;" id="next" class="arrow">&gt;</a>
     </div>
 
-    <!--首页左侧=-=模块-->
+    <!--首页右侧=-=模块-->
     <div class="module">
         <!-- 第一列 -->
         <div class="rows rowOne">
@@ -366,12 +368,8 @@
                 
             </div>
         </div>
-
-        
-
-
     </div>
-    <!--内容左侧-->
+    <!--内容右侧-->
     <div class="index-right">
 
         <!-- 业界速递 -->
