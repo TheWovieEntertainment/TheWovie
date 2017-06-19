@@ -62,16 +62,69 @@ body { padding: 20px;}
 
 
 /*body=-=info*/
-.wrapper{width: 1130px; margin: 0 auto;}
-.index-left{width: 810px;position: relative;float: left;}
+.wrapper{width: 1200px; margin: 40px auto;}
+/*index左侧*/
+.index-left{width: 810px;position: relative;float: left;margin: 0px;}
+
+.index-selRead{margin-top: 0px;}
+.index-selRead .title{font-size: 16px;padding-bottom: 15px;color: #31424e;font-weight: bold;}
+.index-selRead .list li{float: left;padding: 15px;width: 240px;height: 205px;position: relative;left: -15px;top: -15px;
+	-webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+.index-selRead .list ul{width: 810px;left: -15px;right: -15px;}
+.index-selRead .list li:hover{
+	background: #f7f7f7;
+	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+    -webkit-transform: translate3d(0, 1px, -2px);
+    transform: translate3d(0, 1px, -2px);
+}
+.index-selRead .list li .pic img{width: 240px;height: 145px;vertical-align: top;}
+.index-selRead .list li .txt{padding: 15px 5px 0 5px;line-height: 22px;height: 44px;overflow: hidden;}
+.index-selRead .list li .txt a{font-size: 14px;color: #31424e;}
+.index-selRead .list li .box{position: absolute;left:15px;top: 15px;width: 240px;}
+.index-selRead .list li:hover .txt a{color: #ee5b2e;}
+
+
+/*Index右侧*/
+.index-right{overflow: hidden;padding-left:38px;width: 312px;}
+.index-right .rComTitle,
+.serKesy-list .rComTitle,
+.article-right .rComTitle{padding-top: 28px;font-size: 16px;font-weight: bold;color: #31424e;line-height: 1;padding-bottom: 12px;}
+.index-right .rComTitle .more,
+.serKesy-list .rComTitle .more,
+.article-right .rComTitle .more{float: right;font-size: 12px;color: #738693;font-weight: normal;}
+.index-right .rComTitle .more em,
+.serKesy-list .rComTitle .more em,
+.article-right .rComTitle .more em{display: inline-block;vertical-align: 0;margin-left: 7px;background: url(../../images/common/yp_spirit.png) no-repeat -194px -46px;width: 10px;height: 10px;}
+.index-right .rComTitle .more:hover,
+.serKesy-list .rComTitle .more:hover,
+.article-right .rComTitle .more:hover{color: #3E4950}
+.serKesy-list .rComTitle{margin-bottom: 15px;}
 
 
 
 
-
-
-
-
+/*即将上映*/
+.express .list{padding: 25px 25px 0 25px;border:1px solid #E6E6E6;background: #fff;}
+.express .list li{padding-bottom: 25px;overflow: hidden;}
+.express .list li .pic{overflow: hidden;padding-left: 20px;}
+.express .list li .pic img{vertical-align: top;}
+.express .list li .txt{width: 130px;float: left;font-size: 14px;color: #31424e;line-height: 22px;word-break: break-word;}
+.express .list li:hover a{color: #ee5b2e;}
+/*热门作者*/
+.hot-author .list{border:1px solid #e6e6e6;padding: 0 25px;background: #fff;}
+.hot-author .list li{padding: 25px 0;overflow: hidden;border-bottom:1px dotted #E6E6E6;}
+.hot-author .list li .avater{float: left;width:70px;}
+.hot-author .list li .avater img{vertical-align: top;border-radius: 50%;-webkit-border-radius: 50%;}
+.hot-author .list li .txt{overflow: hidden;padding-left: 15px;}
+.hot-author .list li .txt .name{font-size: 15px;color: #ee5b2e;}
+.hot-author .list li .txt .name .gold{display: inline-block;vertical-align: -5px;margin-left: 8px;background: url(../../images/common/yp_spirit.png) no-repeat -235px -45px;width: 21px;height: 25px;}
+.hot-author .list li .txt .intro{font-size: 14px;color: #5e6b73;line-height: 20px;padding-top: 5px;}
+.hot-author .list li:last-child{border-bottom:0;}
 
 
 
@@ -100,31 +153,11 @@ body { padding: 20px;}
 
 
 
-.lph-right .right-ads,
-.lph-right .right-item-sw{margin-top: 71px;}
+.index-right .right-ads,
+.index-right .right-item-sw{margin-top: 71px;}
 
 
-.index-selRead{margin-top: 45px;}
-.index-selRead .title{font-size: 16px;padding-bottom: 15px;color: #31424e;font-weight: bold;}
-.index-selRead .list li{float: left;padding: 15px;width: 240px;height: 205px;position: relative;left: -15px;top: -15px;
-	-webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-.index-selRead .list ul{width: 810px;left: -15px;right: -15px;}
-.index-selRead .list li:hover{
-	background: #f7f7f7;
-	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.1);
-    box-shadow: 0 0 30px rgba(0,0,0,0.15);
-    -webkit-transform: translate3d(0, 1px, -2px);
-    transform: translate3d(0, 1px, -2px);
-}
-.index-selRead .list li .pic img{width: 240px;height: 145px;vertical-align: top;}
-.index-selRead .list li .txt{padding: 15px 5px 0 5px;line-height: 22px;height: 44px;overflow: hidden;}
-.index-selRead .list li .txt a{font-size: 14px;color: #31424e;}
-.index-selRead .list li .box{position: absolute;left:15px;top: 15px;width: 240px;}
-.index-selRead .list li:hover .txt a{color: #ee5b2e;}
+
 
 
 
