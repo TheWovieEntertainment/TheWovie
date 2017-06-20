@@ -10,3 +10,4 @@ CSS z-index ÊôÐÔ         ÉèÖÃÔªËØµÄ¶ÑµþË³Ðò¡£ÓµÓÐ¸ü¸ß¶ÑµþË³ÐòµÄÔªËØ×ÜÊÇ»á´¦ÓÚ¶Ñµ
 CSS zoom    ÊôÐÔ         normal | <number> | <percentage>ÉèÖÃ»ò¼ìË÷¶ÔÏóµÄËõ·Å±ÈÀý¡£
 CSS :after Ñ¡ÔñÆ÷        :after Ñ¡ÔñÆ÷ÔÚ±»Ñ¡ÔªËØµÄÄÚÈÝºóÃæ²åÈëÄÚÈÝ¡£
 CSS overflow ÊôÐÔ        overflow ÊôÐÔ¹æ¶¨µ±ÄÚÈÝÒç³öÔªËØ¿òÊ±·¢ÉúµÄÊÂÇé
+CSS1 !important Óï·¨     ÌáÉýÖ¸¶¨ÑùÊ½¹æÔòµÄÓ¦ÓÃÓÅÏÈÈ¨¡£
