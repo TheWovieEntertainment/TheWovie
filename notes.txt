@@ -11,3 +11,5 @@ CSS zoom    ÊôÐÔ         normal | <number> | <percentage>ÉèÖÃ»ò¼ìË÷¶ÔÏóµÄËõ·Å±ÈÀ
 CSS :after Ñ¡ÔñÆ÷        :after Ñ¡ÔñÆ÷ÔÚ±»Ñ¡ÔªËØµÄÄÚÈÝºóÃæ²åÈëÄÚÈÝ¡£
 CSS overflow ÊôÐÔ        overflow ÊôÐÔ¹æ¶¨µ±ÄÚÈÝÒç³öÔªËØ¿òÊ±·¢ÉúµÄÊÂÇé
 CSS1 !important Óï·¨     ÌáÉýÖ¸¶¨ÑùÊ½¹æÔòµÄÓ¦ÓÃÓÅÏÈÈ¨¡£
+CSS min-width ÊôÐÔ       ÉèÖÃÔªËØµÄ×îÐ¡¿í¶È¡£
+font: 12.5px/29.17px     font-size:12.5px;line-height:29.17px;ËõÐ´

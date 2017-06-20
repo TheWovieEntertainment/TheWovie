@@ -1,11 +1,7 @@
-.f-pr{position: relative;}
 .f-pa{position: absolute;}
 .f-fl{float: left;}
-.f-fr{float: right;}
 .f-cb{zoom:1;}
 .f-cb:after{content: '.';display: block;clear: both;height: 0;overflow: hidden;visibility: hidden;}
-.f-thide{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
-
 
 *{ margin: 0; padding: 0; text-decoration: none;}
 /*page-top*/
@@ -64,10 +60,14 @@
 
 
 /*body=-=info*/
-.wrapper{width: 1200px; margin: 40px auto;}
+.wrapper{width: 1200px;height: 1280px;margin: 40px auto 160px;}
+
+
+
 /*info左侧*/
 .index-left{width: 810px;position: relative;float: left;margin: 0px;}
 
+/*精选导读*/
 .index-selRead{margin-top: 0px;}
 .index-selRead .title{font-size: 16px;padding-bottom: 15px;color: #31424e;font-weight: bold;}
 .index-selRead .list li{float: left;padding: 15px;width: 240px;height: 205px;position: relative;left: -15px;top: -15px;
@@ -91,6 +91,47 @@
 .index-selRead .list li:hover .txt a{color: #ee5b2e;}
 
 
+
+/*最新文章*/
+.lph-pageList .list{padding-top: 25px;text-align: center;}
+.lph-pageList{padding-top: 10px;}
+.lph-pageList .list ul{width: 830px;left: -25px;right: -25px;}
+.lph-pageList .list li{float: left;padding: 25px 25px 0 25px;width: 780px;position: relative;left: -25px;top: -25px;transition: all 0.2s ease-in;
+}
+.lph-pageList .list li .box{position: relative;left:0;top: 0;width: 780px;padding-bottom: 25px;overflow: hidden;border-bottom:1px solid #E6E6E6;}
+.lph-pageList .list li:hover{
+	background: #f7f7f7;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+    transform: translate3d(0, 1px, -2px);
+}
+.lph-pageList .list li .img{width: 240px;height: 145px;vertical-align: top;float: left;position: relative;}
+.lph-pageList .list li .sort{height: 25px;line-height: 25px;padding: 0 10px;background: rgba(0,0,0,0.7);font-size: 12px;color: #fff;position: absolute;top: 0;left: 0;}
+.lph-pageList .list li .img img{width: 240px;height: 145px;vertical-align: top;}
+.lph-pageList .list li .word{padding-left: 22px;overflow: hidden;}
+.lph-pageList .list li .headTit{display: block;font-size: 18px;color: #31424e;font-weight: bold;text-align: left;}
+.lph-pageList .list li .word .des{font-size: 14px;text-align: left;color: #5e6b73;line-height: 22px;padding:15px 0;text-align: left;}
+.lph-pageList .list li .msg {font-size: 14px;color: #9baab6;line-height: 25px;}
+.lph-pageList .list li .msg a{font-size: 12px;color: #9baab6;}
+.lph-pageList .list li .msg .aut{float: left;line-height: 25px;}
+.lph-pageList .list li .msg .aut img{width: 25px;vertical-align: middle;margin-right: 8px;height: 25px;border-radius: 50%;-webkit-border-radius: 50%;}
+.lph-pageList .list li .msg .time{float: left;margin-left: 25px;}
+.lph-pageList .list li .msg .tags{float: right;}
+.lph-pageList .list li .msg .tags a{display: inline-block;padding-left: 8px;}
+.lph-pageList .list li .msg .tags em{display: inline-block;vertical-align: middle;background: url(../../images/common/yp_spirit.png) no-repeat -215px -46px;width: 14px;height: 14px;}
+.lph-pageList .list li .imgs a{float: left;width: 240px;margin-left: 30px;}
+.lph-pageList .list li .imgs a img{width: 240px;height: 145px;vertical-align: top;}
+.lph-pageList .list li .imgs a.first{margin-left: 0;} 
+.lph-pageList .list li .txt .rows{padding: 18px 0;}
+.lph-pageList .list li .txt .rows .sort{position: relative;float: left;padding: 0 10px;height: 25px;line-height: 25px;color: #fff;font-size: 14px;margin-right: 12px;}
+.lph-pageList .list li:hover .headTit{color: #ee5b2e;}
+.cover{display: none;}
+
+/*加载更多*/
+.lph-pageList .list .loadMore a{display: inline-block;background: #f07859;color: #fff;font-size: 14px;width: 220px;height: 46px;text-align: center;line-height: 46px;border-radius: 23px;}
+.lph-pageList .list .loadMore a:hover{opacity: 0.8;}
+
+
+
 /*Index右侧*/
 .index-right{overflow: hidden;padding-left:38px;width: 312px;}
 .index-right .rComTitle,
@@ -106,9 +147,6 @@
 .serKesy-list .rComTitle .more:hover,
 .article-right .rComTitle .more:hover{color: #3E4950}
 .serKesy-list .rComTitle{margin-bottom: 15px;}
-
-
-
 
 /*即将上映*/
 .express .list{padding: 25px 25px 0 25px;border:1px solid #E6E6E6;background: #fff;}
@@ -131,117 +169,14 @@
 
 
 
-
-
-
-
-/*底部*/
-.g-ft{height: 262px;min-width: 1202px;background-color: #2c3339;}
-.m-ftwrap{width: 948px;height: 262px;margin: 0 auto;}
-.m-ftwrap .ftleft{padding-top: 95px;}
-.m-ftwrap .title{padding-bottom: 30px;}
-.m-ftwrap .title .u-title-en{font: normal bold 28px/20px 'Gill Sans MT';color: #39a030;}
-.m-ftwrap .title span{display: inline-block;width: 23px;height: 20px;background: url(../img/ui-sprite.png) 0 -47px no-repeat;}
-.m-ftwrap .title .u-title-ch{font: normal bold 22px/20px 'Hiragino Sans GB';color: #39a030;}
-.m-ftwrap .cprt{font: 12.5px/25px '微软雅黑';color: #fff;}
-.m-ftwrap .ftright{padding-top: 82px;}
-.m-ftwrap .ftright p{font: 12.5px/29.17px '微软雅黑';color: #fff;}
-.m-ftwrap .ftright a{font: 14.58px/29.17px '微软雅黑';color: #fff;}
-.m-ftwrap .ftright a:hover{text-decoration: underline;}
-.m-ftwrap .link{margin-right: 98px;}
-.m-ftwrap .about{margin-right: 73px;}
-.m-ftwrap .atweibo{display: inline-block;width: 20px;height: 16px;margin-left: 11px;vertical-align: middle;background: url(../img/ui-sprite.png) 0 -75px no-repeat;}
-
-
-
-
-.index-right .right-ads,
-.index-right .right-item-sw{margin-top: 71px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.lph-left{width: 780px; float: left;}
-
-
-
-.lph-pageList .title .upd-num{font-size: 14px;color: #5e6b73;line-height: 25px;font-weight: normal;}
-.lph-pageList .title .upd-num span{color: #ee5b2e;}
-.lph-pageList .title .upd-num  em{display: inline-block;margin-right: 8px;vertical-align: -5px;background: url(../../images/common/yp_spirit.png) no-repeat -15px -391px;width: 21px;height: 23px;}
-
-.lph-pageList{padding-top: 10px;}
-.lph-pageList .title{font-size: 22px;color: #31424e;line-height: 1;;font-weight: bold;/*margin-bottom: 25px;*/margin-bottom: 2px;}
-.lph-pageList .list ul{width: 830px;left: -25px;right: -25px;}
-.lph-pageList .list li{float: left;padding: 25px 25px 0 25px;width: 780px;position: relative;left: -25px;top: -25px;
-	-webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-.lph-pageList .list li .box{position: relative;left:0;top: 0;width: 780px;padding-bottom: 25px;overflow: hidden;border-bottom:1px solid #E6E6E6;}
-.lph-pageList .list li:hover{
-	background: #f7f7f7;
-	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.1);
-    box-shadow: 0 0 30px rgba(0,0,0,0.15);
-    -webkit-transform: translate3d(0, 0px, -2px);
-    transform: translate3d(0, 1px, -2px);
-}
-.lph-pageList .list li .img{width: 240px;height: 145px;vertical-align: top;float: left;position: relative;}
-.lph-pageList .list li .sort{height: 25px;line-height: 25px;padding: 0 10px;background: rgba(0,0,0,0.7);font-size: 12px;color: #fff;position: absolute;top: 0;left: 0;}
-.lph-pageList .list li .img img{width: 240px;height: 145px;vertical-align: top;}
-.lph-pageList .list li .word{padding-left: 22px;overflow: hidden;}
-.lph-pageList .list li .headTit{display: block;font-size: 18px;color: #31424e;font-weight: bold;text-align: left;}
-.lph-pageList .list li .word .des{font-size: 14px;text-align: left;color: #5e6b73;line-height: 22px;padding:15px 0;text-align: left;}
-.lph-pageList .list li .msg {font-size: 14px;color: #9baab6;line-height: 25px;}
-.lph-pageList .list li .msg a{font-size: 12px;color: #9baab6;}
-.lph-pageList .list li .msg .aut{float: left;line-height: 25px;}
-.lph-pageList .list li .msg .aut img{width: 25px;vertical-align: middle;margin-right: 8px;height: 25px;border-radius: 50%;-webkit-border-radius: 50%;}
-.lph-pageList .list li .msg .time{float: left;margin-left: 25px;}
-.lph-pageList .list li .msg .tags{float: right;}
-.lph-pageList .list li .msg .tags a{display: inline-block;padding-left: 8px;}
-.lph-pageList .list li .msg .tags em{display: inline-block;vertical-align: middle;background: url(../../images/common/yp_spirit.png) no-repeat -215px -46px;width: 14px;height: 14px;}
-
-
-.lph-pageList .list li .imgs a{float: left;width: 240px;margin-left: 30px;}
-.lph-pageList .list li .imgs a img{width: 240px;height: 145px;vertical-align: top;}
-.lph-pageList .list li .imgs a.first{margin-left: 0;} 
-.lph-pageList .list li .txt .rows{padding: 18px 0;}
-.lph-pageList .list li .txt .rows .sort{position: relative;float: left;padding: 0 10px;height: 25px;line-height: 25px;color: #fff;font-size: 14px;margin-right: 12px;}
-
-.lph-pageList .list li:hover .headTit{color: #ee5b2e;}
-
-.lph-pageList .list li .sort.yj{background: #b145b8;}
-.lph-pageList .list li .sort.xx{background: #44c256;}
-.lph-pageList .list li .sort.tx{background: #d05c5c;}
-.lph-pageList .list li .sort.zl{background: #5097df;}
-.lph-pageList .list li .sort.gj{background: #3d35d8;}
-.lph-pageList .list li .sort.qt{background: #303842;}
-.lph-pageList .list li .sort.tg{background: #ea8b3d;}
-.lph-pageList .list li .sort.znyj{background: #376ce4;}
-.lph-pageList .list li .sort.wlaq{background: #43ad32;}
-.lph-pageList .list li .sort.znjs{background: #34415d;}
-.lph-pageList .list li .sort.ar{background: #6e2fd8;}
-.lph-pageList .list li .sort.jqr{background: #dda23c;}
-.lph-pageList .list li .sort.jrkj{background: #ee5757;}
-.lph-pageList .list li .sort.rgzn{background: #29bbc0;}
-
-/*注释*/
-.lph-pageList .list{padding-top: 25px;text-align: center;}
-.lph-pageList .list .loadMore a{display: inline-block;background: #f07859;color: #fff;font-size: 14px;width: 220px;height: 46px;text-align: center;line-height: 46px;border-radius: 23px;-webkit-border-radius: 23px;}
-.lph-pageList .list .loadMore a em{display: inline-block;vertical-align: middle;background: url(../../images/common/yp_spirit.png) no-repeat -265px -45px;width: 10px;height: 6px;margin-left: 10px;}
-.lph-pageList .list .loadMore a:hover{opacity: 0.8;filter:alpha(opacity=80);}
-
-
-
-
-/*注释*/
+/*footer*/
+.ft{height: 200px;min-width: 1202px;background-color: #254B62;margin-top: 20px;}
+.mfoot{width: 948px;height: 200px;margin: 0 auto;}
+.mfoot .ftleft{padding-top: 60px;padding-left: 40px; position: relative;float: left;}
+.mfoot .title{padding-bottom: 20px;font: normal bold 22px/20px 'Hiragino Sans GB';color: #39a030;}
+.cprt{font: 12.5px/32px '微软雅黑';color: #fff;}
+.mfoot .ftright{padding-top: 40px;padding-left: 300px; overflow: hidden;}
+.mfoot .ftright p{font: 12.5px/32px '微软雅黑';color: #fff;}
+.mfoot .ftright a{font: 14.58px/32px '微软雅黑';color: #fff;}
+.mfoot .ftright a:hover{color: aqua;}
+.mfoot .ftright .link{margin-bottom: 10px;}

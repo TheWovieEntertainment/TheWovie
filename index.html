@@ -20,6 +20,7 @@
     </style>
 
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <!--广告栏上滑消失-->
     <script type="text/javascript">
         $(document).ready(function(){
             setTimeout(function(){$("#ad").slideUp(600);
@@ -27,9 +28,19 @@
             
         });
     </script>
+        
+    <script type="text/javascript">
+        //点击 加载更多
+        $(document).ready(function(){
+            $(".loadMore").click(function(){
+                $(".wrapper").css("height","2000px");
+                $(".cover").css("display","block");
+                $(".loadMore").css("display","none");
+            });
+        });
+    </script>
 </head>
 <body>
-
 
 <!-- 顶栏广告位 -->
 <div class="top-banner" id="ad">
@@ -54,9 +65,9 @@
             <div class="links-container">
                 <span class="topbar-menu-links">
                     <a href="register.html">sign up</a>
-                    <a href="https://stackexchange.com/users/login?returnurl=https%3a%2f%2fstackexchange.com%2f">log in</a>
+                    <a href="login.html">log in</a>
                     <a data-loc="2" class="tour-link" href="/tour">tour</a>
-                    <a href="/about">about us</a>
+                    <a href="aboutus.html">about us</a>
                 </span>
             </div>
 
@@ -110,7 +121,6 @@
                         <img src="img/module1.jpg" width="195" height="195" />
                     </div>
                     <div class="txt">2017年第70届戛纳电影节官方获奖名单揭晓</div>
-                    <div class="cover"></div>
                 </a>
                 <div class="shadow"></div>
             </div>
@@ -123,7 +133,6 @@
                         <img src="img/module2.jpg" width="195" height="195" />
                     </div>
                     <div class="txt">暑期必看《表情奇幻冒险》北美将映 大IP燃爆世界</div>
-                    <div class="cover"></div>
                 </a>
                 <div class="shadow"></div>
             </div>
@@ -355,14 +364,119 @@
                         </div>
                     </li>
 
+                    <li class="cover">
+                        <div class="box">
+                            <div class="img">
+                                <a href="#"  target="_blank">
+                                    <img class='lazy' src="img/Article1.jpg"  alt="" />
+                                </a>
+                            </div>
+                            <div class="word">
+                                <h3>
+                                <a href="#" target="_blank"  class="headTit">
+                                    女神暑期档再发力！《神奇女侠》将延期上映到7月底
+                                </a>
+                                </h3>
+                                <!--description-->
+                                <div class="des">
+                                    电影《神奇女侠》于6月2日在内地上映，18天的时间内地票房总收入已接近6亿元。今天，据@TNABO北美票房榜吧消息，影片将延期上映到7月31日，女神发力暑期档，不知道票房能否再添一把火呢？
+                                </div>
+                                <div class="msg">
+                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                        <img src="img/innovation.jpg" width="50" height="50" alt=""/>Innovation
+                                    </a>
+                                    <div class="time">06月18日 10:35</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cover">
+                        <div class="box">
+                            <div class="img">
+                                <a href="#"  target="_blank">
+                                    <img class='lazy' src="img/article2.jpg"  alt="" />
+                                </a>
+                            </div>
+                            <div class="word">
+                                <h3>
+                                <a href="#" target="_blank"  class="headTit">
+                                    变形金刚5电影时长有没有删减 变形金刚5中国特供版是真的假的
+                                </a>
+                                </h3>
+                                <!--description-->
+                                <div class="des">
+                                    《变形金刚5》即将上映，电影的市场依旧是大家最关注的的问题之一，因为之前几部科幻片对于剧情的删减让人直呼不过瘾，那么这一次的内容是否被删减过呢？
+                                </div>
+                                <div class="msg">
+                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                        <img src="img/tempo.jpg" width="50" height="50" alt=""/>Innovation
+                                    </a>
+                                    <div class="time">06月17日 15:27</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cover">
+                        <div class="box">
+                            <div class="img">
+                                <a href="#"  target="_blank">
+                                    <img class='lazy' src="img/article3.jpg"  alt="" />
+                                </a>
+                            </div>
+                            <div class="word">
+                                <h3>
+                                <a href="#" target="_blank"  class="headTit">
+                                    《蜘蛛侠：英雄归来》剧照及片场花絮抢鲜看，最青春蜘蛛侠和大反派秃鹫亮相
+                                </a>
+                                </h3>
+                                <!--description-->
+                                <div class="des">
+                                    2017年暑期大片，《蜘蛛侠：英雄归来》接续《美国队长3》，讲述蜘蛛侠在“人生导师”钢铁侠的帮助下与终极大反派秃鹫斗智斗勇的故事。当红小鲜肉汤姆·赫兰德出演蜘蛛侠。
+                                </div>
+                                <div class="msg">
+                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                        <img src="img/zhang_yao_yao.png" width="50" height="50" alt=""/>Innovation
+                                    </a>
+                                    <div class="time">06月20日 20:33</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                     <li class="cover">
+                        <div class="box">
+                            <div class="img">
+                                <a href="#"  target="_blank">
+                                    <img class='lazy' src="img/article4.jpg"  alt="" />
+                                </a>
+                            </div>
+                            <div class="word">
+                                <h3>
+                                <a href="#" target="_blank"  class="headTit">
+                                    电影版《三生三世十里桃花》将于暑期上映(双语)
+                                </a>
+                                </h3>
+                                <!--description-->
+                                <div class="des">
+                                    继热播电视剧《三生三世十里桃花》之后，根据同名网络小说改编的电影版也即将在今年暑期上映。
+
+                                </div>
+                                <div class="msg">
+                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                        <img src="img/zhang_yao_yao.png" width="50" height="50" alt=""/>Innovation
+                                    </a>
+                                    <div class="time">06月20日 20:33</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
                 <div class="loadMore">
-                    <a href="javascript:;">加载更多<em></em></a>
-                </div>
-                
-                <div class="lph-page">
-                    <a class="prev" href="jacascript:void(0)"><em></em></a>
-                    <a class="next" href="https://www.leiphone.com/page/4"><em></em></a>
+                    <a>加载更多</a>
                 </div>
                 
             </div>
@@ -463,15 +577,6 @@
                             <a href="https://www.leiphone.com/author/AI%E7%A0%94%E4%B9%A0%E7%A4%BE394" target="_blank" class='name'>Tempo<em class='gold'></em></a>
                             <div class="intro">WE特邀作者、影评达人。</div></div>
                     </li>
-                    <!--<li>
-                        <a href='https://www.leiphone.com/author/tieliu' target="_blank" class="avater">
-                            <img src="https://www.leiphone.com/uploads/new/avatar/04/15/35/33_avatar_pic_100_100.jpg?updateTime=1" width="70" height="70" />
-                        </a>
-                        <div class="txt">
-                            <a href="https://www.leiphone.com/author/tieliu" target="_blank" class='name'>铁流<em class='gold'></em></a>
-                            <div class="intro">关注芯片、航空领域，雷锋网活跃作者</div>
-                        </div>
-                    </li>-->
                 </ul>
             </div>
         </div>
@@ -489,7 +594,6 @@
                 <a href="https://www.leiphone.com/tag/视频" target="_blank">异形·契约</a>
                 <a href="https://www.leiphone.com/tag/计算机视觉" target="_blank">神偷奶爸3</a>
                 <a href="https://www.leiphone.com/tag/中移动" target="_blank">嫌疑人X的献身</a>
-                <a href="https://www.leiphone.com/tag/互联网电视" target="_blank">《加勒比海盗5》杰克船长归来</a>
                 <a href="https://www.leiphone.com/tag/电子书" target="_blank">你的名字</a>
             </div>
         </div>
@@ -499,45 +603,33 @@
 
 
 
-
-
-
-
 <!--footer-->
-<!--<div class="g-ft">
-    <div class="m-ftwrap f-pr f-cb">
-
-        <div class="ftleft f-fl">
-            <div class="title f-cb"><h1 class="u-title-en f-fl">WE</h1><span class="f-fl"></span><h1 class="u-title-ch f-fl">WE电影资讯部</h1></div>
-            <p class="cprt">©2014 icourse163.org 浙ICP备08114786号-1</br>icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
+<div class="ft">
+    <div class="mfoot">
+        <div class="ftleft">
+            <div class="title f-cb">
+                TheWoie电影资讯
+            </div>
+            <p class="cprt">©2017 innovation.org  LOL ICP备0000000号-1</br>icourses.cn 京ICP备33333333号-2 京公网安备12345678-2</p>
         </div>
 
-        <div class="ftright f-fr f-cb">
-            <div class="link f-fl">
-                <p>友情链接：</p>
-                <a href="http://open.163.com/"  target="_blank">网易公开课</a></br>
-                <a href="http://study.163.com/"  target="_blank">网易云课堂</a></br>
-                <a href="http://www.icourse163.org/"  target="_blank">中国大学MOOC</a>
+        <div class="ftright f-cb">
+            <div class="link">
+                <p>友情链接:</p> 
+                <a href="https://movie.douban.com/"  target="_blank">豆瓣电影&nbsp</a>
+                <a href="http://www.mtime.com/"  target="_blank"> Mtime&nbsp</a>
+                <a href="http://tv.cctv.com/cctv6/"  target="_blank"> CCTV-6</a>
             </div>
 
-            <div class="about f-fl">
+            <div class="about">
                 <p>我们：</p>
-                <a href="http://study.163.com/about/aboutus.htm#/about?aboutType=1"  target="_blank">关于</a></br>
-                <a href="http://study.163.com/about/aboutus.htm#/about?aboutType=2"  target="_blank">联系</a></br>
-                <a href="http://weibo.com/study163?sudaref=study.163.com"  target="_blank">关注</a><a href="http://weibo.com/study163?sudaref=study.163.com"  target="_blank" class="atweibo"></a>
+                <a href="aboutus.html"  target="_blank">关于&nbsp</a>
+                <a href="concactus.html"  target="_blank">联系&nbsp</a>
+                <a href="joinus.html"  target="_blank">加入</a>
             </div>
-
-            <div class="more f-fl">
-                <p>更多：</p>
-                <a href="http://study.163.com/about/aboutus.htm#/about?aboutType=4"  target="_blank">常见问题</a></br>
-                <a href="http://study.163.com/about/aboutus.htm#/about?aboutType=8"  target="_blank">意见反馈</a>
-            </div>
-
         </div>
     </div>
-</div>-->
-
-
+</div>
 
 </body>
 </html>
