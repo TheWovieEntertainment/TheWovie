@@ -1,6 +1,3 @@
-Spark
-Storm
-Hadoop
 cursor: pointer;         鼠标变成小手形状
 border-radius: 20px;     圆角
 display: inline-block    http://zh-tw.learnlayout.com/inline-block.html
@@ -13,3 +10,6 @@ CSS overflow 属性        overflow 属性规定当内容溢出元素框时发生的事情
 CSS1 !important 语法     提升指定样式规则的应用优先权。
 CSS min-width 属性       设置元素的最小宽度。
 font: 12.5px/29.17px     font-size:12.5px;line-height:29.17px;缩写
+CSS :first-child 选择器  :first-child 选择器用于选取属于其父元素的首个子元素的指定选择器。
+CSS3 box-shadow 属性     box-shadow 属性向框添加一个或多个阴影
+CSS3 text-shadow 属性    text-shadow 属性向文本设置阴影。
