@@ -22,17 +22,17 @@
         </li>
         <li>
             <label for="email">电子邮件:</label>
-            <input type="email" id="email" placeholder="1234567890@gmail.com" required />
+            <input type="email" id="email" placeholder="1234567890@gmail.com" required pattern="^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$"/>
             <span class="form_hint">正确格式为：sayingforever@163.com</span>
         </li>
         <li>
             <label for="tel">手机号码</label>
-            <input type="tel" name="tel" id="tel" placeholder="1**********" required pattern="^1[345678][0-9]{9}$"/>
+            <input type="tel" name="tel" id="tel" placeholder="1**********" required pattern="^1[345678][0-9]{9}"/>
             <span class="form_hint">正确格式为：1**********</span>
         </li>
         <li>
             <label for="pasword">密码:</label>
-            <input type="password" name="password" id="pasword" placeholder="*******" required />
+            <input type="password" name="password" id="pasword" placeholder="*******" required pattern="^[0-9a-zA-Z!@#$^]{6,18}$"/>
             <span class="form_hint">正确格式为：6~18个字符</span>
         </li>
         <li>
