@@ -112,7 +112,7 @@ body{font:13px/26px "微软雅黑";background: #F5F7FA}
             <span class="form_hint">正确格式为：6~18个字符</span>
         </li>
         <li>
-        	<button class="submit" type="submit" onclick="login()">登录</button>
+        	<button class="submit" type="button" onclick="login()">登录</button>
         </li>
     </ul>
 </form>
@@ -122,16 +122,16 @@ body{font:13px/26px "微软雅黑";background: #F5F7FA}
 	function login(){
 		
 		if(typeof(Storage) !== "undefined"){
-			if(!(localStorage.getItem("tel") == (document.getElementById("tel").value) && localStorage.getItem("password") == (document.getElementById("password").value))){
-				alert(":(");
+			if(localStorage.getItem("tel") == (document.getElementById("tel").value) && localStorage.getItem("password") == (document.getElementById("password").value)){
+				location.href="index.html"
+			}else{
+				alert("tel or password error!!! sad :(");
 			}
-			
-			
-		}
-		else
+		}else
 		{
 			alert("您的浏览器不支持客户端存储");
 		}
+
     }
 
 </script>

@@ -1,0 +1,28 @@
+ /*文章详情页面*/
+        .lphArticle-detail{min-width:1130px;}
+        .lphArticle-detail .article-title{background: #ebebeb;padding-bottom: 30px;border-top:1px solid #E3E3E3;border-bottom:1px solid #E3E3E3;}
+        .lphArticle-detail .article-title .inner{width: 800px;margin: 0 auto;}
+        .lphArticle-detail .article-title .headTit{width: 680px;margin: 0 auto;font-size: 23px;color: #31424e;text-align: center;font-weight: bold;line-height: 40px;padding:60px 0 25px 0;}
+
+        .lphArticle-detail .article-title .msg table{width: 400px;font-size: 14px;margin: 0 auto;}
+        .lphArticle-detail .article-title .msg table td{padding: 0 25px;text-align: center;}
+        .lphArticle-detail .article-title .msg table .aut,
+        .lphArticle-detail .article-title .msg table .aut a{font-size: 14px;color: #5e6b73;}
+        .lphArticle-detail .article-title .msg table .time{color: #9baab6;}
+        .lphArticle-detail .article-title .msg table td a{font-size: 14px;color: #5e6b73;}
+
+        .lphArticle-detail .article-title .article-lead{padding-top:20px;position: relative;padding-left: 35px;color: #8896a1;line-height:24px;font-size: 14px;width: 740px;padding-left: 20px;text-align: center;}
+        .lphArticle-detail .article-title .article-lead em{background: url(../../images/common/yp_spirit.png) no-repeat -18px -497px;width: 24px;height: 19px;display: inline-block;vertical-align: -2px;margin-right: 10px;}
+
+        .lphArticle-detail .info{padding-top: 0px;width: 800px;margin: 0 auto 50px;}
+        .lphArticle-detail .lph-article-comView{padding-top: 40px;word-break: break-word;}
+        .lphArticle-detail .lph-article-comView p{color: #31424e;font-size: 16px;line-height: 2;}
+
+        /*收藏*/
+        .collect{display: inline-block;margin: 20px 0;line-height: 36px;border:2px solid #C3CBCD;padding: 0px 20px 0px 20px;-webkit-border-radius: 20px;border-radius: 20px;color: #6b7e83;font-size: 12px;}
+        .collect:hover{color: #f0c11c;border-color: #f0c11c;cursor: pointer;}
+
+        img{
+            width: 100%;
+
+        }

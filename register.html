@@ -124,7 +124,7 @@ body{font:13px/26px "微软雅黑";background: #F5F7FA}
             <span class="form_hint">正确格式为：6~18个字符</span>
         </li>
         <li>
-        	<button class="submit" type="submit" onclick="init()">注册</button> <a href="login.html" class="login">logIn</a>
+        	<button class="submit" type="button" onclick="init()">注册</button> <a href="login.html" class="login">logIn</a>
         </li>
     </ul>
 </form>
@@ -144,6 +144,8 @@ body{font:13px/26px "微软雅黑";background: #F5F7FA}
             {
                 alert("您的浏览器不支持客户端存储");
             }
+            if(document.getElementById("tel").value != "" && document.getElementById("pasword").value != "")
+                location.href = "login.html"
         }
 </script>
 </html>

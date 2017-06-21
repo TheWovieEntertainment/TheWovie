@@ -3,57 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>电影资讯 | WE</title>
-
-	<script src="js/main.js" type="text/javascript"></script>
     <!--轮播图js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script src="js/slideshow.js" type="text/javascript"></script>
-       
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script>
+      
+    </script>
+
 	<link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <style>
-    html, body, p, table, section, hgroup, header, ul, li, footer, nav, article, div, span, form, img {margin: 0;padding: 0;border: none;}
-    
-    .serKesy-list .list a{float: left;margin:0 15px 15px 0;padding: 0 15px;background: #fff;color: #5e6b73;font-size: 14px;height: 30px;line-height: 30px;border:1px solid #E8ECEF;border-radius: 16px;-webkit-border-radius: 16px;}
-    .serKesy-list .list a:hover{background: #a0aebc;border-color: #a0aebc;color: #fff;}
-    
-    #ad{height: 200px; text-align: center;background-color: black;padding-top: 20px;}
-    </style>
-
-    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-    <!--广告栏上滑消失-->
-    <script type="text/javascript">
-        $(document).ready(function(){
-            setTimeout(function(){$("#ad").slideUp(600);
-            },1200);
-            
-        });
-    </script>
-        
-    <script type="text/javascript">
-        //点击 加载更多
-        $(document).ready(function(){
-            $(".loadMore").click(function(){
-                $(".wrapper").css("height","2000px");
-                $(".cover").css("display","block");
-                $(".loadMore").css("display","none");
-            });
-        });
-    </script>
 </head>
-<body>
+<body onload="change();">
 
 <!-- 顶栏广告位 -->
 <div class="top-banner" id="ad">
     <a href="#" target="_blank">
-        <img src="img/logo.jpg" alt="The Wovie">
+        <img src="img/logo.png" alt="The Wovie">
     </a>
 </div>
 
 <!--topbar-->
-<section class="topbar">
+<header class="topbar">
     <div class="topbar-wrapper">
-
-        <div class="js-topbar-dialog-corral"></div>
 
         <div class="network-items">
             <a href="index.html">
@@ -66,17 +39,18 @@
                 <span class="topbar-menu-links">
                     <a href="register.html">sign up</a>
                     <a href="login.html">log in</a>
-                    <a data-loc="2" class="tour-link" href="/tour">tour</a>
-                    <a href="aboutus.html">about us</a>
+                    <a href="#pageList">tour</a>
+                    <a href="aboutus.html" target="-blank">about us</a>
+                    <!--<a href="aboutus.html">hello <span>innovation</span></a>-->
                 </span>
             </div>
 
             <div class="search-container">
-                    <input name="q" id="search" type="text" placeholder="search all sites" tabindex="1" autocomplete="off" maxlength="240" />
+                    <input id="search" type="text" placeholder="search all sites" autocomplete="on" maxlength="240" />
             </div>
         </div>
     </div>
-</section>
+</header>
 
 <!--首页顶部-->
 <div class="page-top">
@@ -128,7 +102,7 @@
         <!-- 第二列 -->
         <div class="rows">
             <div class="column line picTxt">
-                <a href="/banner/homepageUrl/id/2326" target="_blank">
+                <a href="#" target="_blank">
                     <div class="pic">
                         <img src="img/module2.jpg" width="195" height="195" />
                     </div>
@@ -140,7 +114,7 @@
                 <table>
                     <tr>
                         <td>
-                            <a href="/banner/homepageUrl/id/2344" target="_blank">2017微博电影之夜荣誉名单</a>
+                            <a href="#" target="_blank">2017微博电影之夜荣誉名单</a>
                         </td>
                     </tr>
                 </table>
@@ -178,12 +152,12 @@
                     <li>
                         <div class="box">
                             <div class="pic">
-                                <a href="https://www.leiphone.com/latest/index/id/4034" target="_blank">
+                                <a href="#" target="_blank">
                                     <img src="img/guide2.jpg" alt="" />
                                 </a>
                             </div>
                             <div class="txt">
-                                <a href="https://www.leiphone.com/latest/index/id/4034" target="_blank">
+                                <a href="#" target="_blank">
                                     《加勒比海盗5：死无对证》杰克船长带你领略波澜壮阔的海战争霸和史诗冒险
                                 </a>
                             </div>
@@ -192,12 +166,12 @@
                     <li>
                         <div class="box">
                             <div class="pic">
-                                <a href="https://www.leiphone.com/latest/index/id/4041" target="_blank">
+                                <a href="#" target="_blank">
                                     <img src="img/guide3.jpg" alt="" />
                                 </a>
                             </div>
                             <div class="txt">
-                                <a href="https://www.leiphone.com/latest/index/id/4041" target="_blank">
+                                <a href="#" target="_blank">
                                     《哆啦A梦·南极冰凉大冒险》跟哆啦A梦一起去南极来次消夏之旅吧
                                 </a>
                             </div>
@@ -220,12 +194,12 @@
                     <li>
                         <div class="box">
                             <div class="pic">
-                                <a href="https://www.leiphone.com/latest/index/id/4040" target="_blank">
+                                <a href="#" target="_blank">
                                     <img src="img/guide5.jpg" alt="" />
                                 </a>
                             </div>
                             <div class="txt">
-                                <a href="https://www.leiphone.com/latest/index/id/4040" target="_blank">
+                                <a href="#" target="_blank">
                                     《神奇女侠》捍卫和平、拯救世界，上演了震撼人心的史诗传奇
                                 </a>
                             </div>
@@ -234,12 +208,12 @@
                     <li>
                         <div class="box">
                             <div class="pic">
-                                <a href="https://www.leiphone.com/latest/index/id/4038" target="_blank">
+                                <a href="#" target="_blank">
                                     <img src="img/guide6.jpg" alt="" />
                                 </a>
                             </div>
                             <div class="txt">
-                                <a href="https://www.leiphone.com/latest/index/id/4038" target="_blank">
+                                <a href="#" target="_blank">
                                     《喜欢你》   “喜欢你”还是“讨厌你”？
                                 </a>
                             </div>
@@ -251,7 +225,7 @@
         <!-- 精选导读end -->
 
         <!-- 最新文章 -->     
-        <div class="lph-pageList index-pageList">
+        <div class="index-pageList" id="pageList">
             <div class="list">
                 <ul>
                     <li>
@@ -272,7 +246,7 @@
                                     电影《神奇女侠》于6月2日在内地上映，18天的时间内地票房总收入已接近6亿元。今天，据@TNABO北美票房榜吧消息，影片将延期上映到7月31日，女神发力暑期档，不知道票房能否再添一把火呢？
                                 </div>
                                 <div class="msg">
-                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                    <a href="#" target="_blank" class="aut" rel="nofollow">
                                         <img src="img/innovation.jpg" width="50" height="50" alt=""/>Innovation
                                     </a>
                                     <div class="time">06月18日 10:35</div>
@@ -299,7 +273,7 @@
                                     《变形金刚5》即将上映，电影的市场依旧是大家最关注的的问题之一，因为之前几部科幻片对于剧情的删减让人直呼不过瘾，那么这一次的内容是否被删减过呢？
                                 </div>
                                 <div class="msg">
-                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                    <a href="#" target="_blank" class="aut" rel="nofollow">
                                         <img src="img/tempo.jpg" width="50" height="50" alt=""/>Innovation
                                     </a>
                                     <div class="time">06月17日 15:27</div>
@@ -326,7 +300,7 @@
                                     2017年暑期大片，《蜘蛛侠：英雄归来》接续《美国队长3》，讲述蜘蛛侠在“人生导师”钢铁侠的帮助下与终极大反派秃鹫斗智斗勇的故事。当红小鲜肉汤姆·赫兰德出演蜘蛛侠。
                                 </div>
                                 <div class="msg">
-                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                    <a href="#" target="_blank" class="aut" rel="nofollow">
                                         <img src="img/zhang_yao_yao.png" width="50" height="50" alt=""/>Innovation
                                     </a>
                                     <div class="time">06月20日 20:33</div>
@@ -355,7 +329,7 @@
 
                                 </div>
                                 <div class="msg">
-                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                    <a href="#" target="_blank" class="aut" rel="nofollow">
                                         <img src="img/zhang_yao_yao.png" width="50" height="50" alt=""/>Innovation
                                     </a>
                                     <div class="time">06月20日 20:33</div>
@@ -382,7 +356,7 @@
                                     电影《神奇女侠》于6月2日在内地上映，18天的时间内地票房总收入已接近6亿元。今天，据@TNABO北美票房榜吧消息，影片将延期上映到7月31日，女神发力暑期档，不知道票房能否再添一把火呢？
                                 </div>
                                 <div class="msg">
-                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                    <a href="#" target="_blank" class="aut" rel="nofollow">
                                         <img src="img/innovation.jpg" width="50" height="50" alt=""/>Innovation
                                     </a>
                                     <div class="time">06月18日 10:35</div>
@@ -409,7 +383,7 @@
                                     《变形金刚5》即将上映，电影的市场依旧是大家最关注的的问题之一，因为之前几部科幻片对于剧情的删减让人直呼不过瘾，那么这一次的内容是否被删减过呢？
                                 </div>
                                 <div class="msg">
-                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                    <a href="#" target="_blank" class="aut" rel="nofollow">
                                         <img src="img/tempo.jpg" width="50" height="50" alt=""/>Innovation
                                     </a>
                                     <div class="time">06月17日 15:27</div>
@@ -436,7 +410,7 @@
                                     2017年暑期大片，《蜘蛛侠：英雄归来》接续《美国队长3》，讲述蜘蛛侠在“人生导师”钢铁侠的帮助下与终极大反派秃鹫斗智斗勇的故事。当红小鲜肉汤姆·赫兰德出演蜘蛛侠。
                                 </div>
                                 <div class="msg">
-                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                    <a href="#" target="_blank" class="aut" rel="nofollow">
                                         <img src="img/zhang_yao_yao.png" width="50" height="50" alt=""/>Innovation
                                     </a>
                                     <div class="time">06月20日 20:33</div>
@@ -465,7 +439,7 @@
 
                                 </div>
                                 <div class="msg">
-                                    <a href="https://www.leiphone.com/author/sijia893" target="_blank" class="aut" rel="nofollow">
+                                    <a href="#" target="_blank" class="aut" rel="nofollow">
                                         <img src="img/zhang_yao_yao.png" width="50" height="50" alt=""/>Innovation
                                     </a>
                                     <div class="time">06月20日 20:33</div>
@@ -487,7 +461,7 @@
 
         <!-- 业界速递 -->
         <div class="express">
-            <div class="rComTitle">即将上映<a  href="https://www.leiphone.com/category/sponsor" target="_blank" class='more'>MORE<em></em></a></div>
+            <div class="rComTitle">即将上映<a  href="#" target="_blank" class='more'>MORE<em></em></a></div>
             <div class="list">
                 <ul>
                     <li>
@@ -505,13 +479,13 @@
                             《神偷奶爸3》7.7去影院看调皮可爱的小黄人
                         </a>
                         <div class="pic">
-                            <a href="" target="_blank">
+                            <a href="#" target="_blank">
                                 <img src="img/future2.jpg" width="110"  height="65" />
                             </a>
                         </div>
                     </li>
                     <li>
-                        <a href="" target="_blank" class='txt'>
+                        <a href="#" target="_blank" class='txt'>
                             《悟空传》7.13 挥动金箍棒，让诸佛烟消云散
                         </a>
                         <div class="pic">
@@ -521,7 +495,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="" target="_blank" class='txt'>
+                        <a href="#" target="_blank" class='txt'>
                             《绣春刀2：修罗战场》8.11 蝼蚁般的众生在明末乱世的逆命之争
                         </a>
                         <div class="pic">
@@ -531,11 +505,11 @@
                         </div>
                     </li>
                     <li>
-                        <a href="https://www.leiphone.com/news/201706/TS60KssYQyJxHjZg.html" target="_blank" class='txt'>
+                        <a href="#" target="_blank" class='txt'>
                         《建军大业》7.28  星星之火可以燎原！
                         </a>
                         <div class="pic">
-                            <a href="https://www.leiphone.com/news/201706/TS60KssYQyJxHjZg.html" target="_blank">
+                            <a href="#" target="_blank">
                                 <img src="img/future5.jpg" width="110"  height="65" />
                             </a>
                         </div>
@@ -550,31 +524,31 @@
             <div class="list">
                 <ul>
                     <li>
-                        <a href='https://www.leiphone.com/author/zhujianzhineng5231' target="_blank" class="avater">
+                        <a href='#' target="_blank" class="avater">
                             <img src="img/innovation.jpg" width="70" height="70" />
                         </a>
                         <div class="txt">
-                            <a href="https://www.leiphone.com/author/zhujianzhineng5231" target="_blank" class='name'>innovation<em class='gold'></em></a>
+                            <a href="#" target="_blank" class='name'>innovation<em class='gold'></em></a>
                             <div class="intro">
                                 乌合之众
                             </div>
                         </div>
                     </li>
                     <li>
-                        <a href='https://www.leiphone.com/author/li189' target="_blank" class="avater">
+                        <a href='#' target="_blank" class="avater">
                             <img src="img/zhang_yao_yao.png"width="70" height="70" />
                         </a>
                         <div class="txt">
-                            <a href="https://www.leiphone.com/author/li189" target="_blank" class='name'>Zhang_Yao_Yao<em class='gold'></em></a>
+                            <a href="#" target="_blank" class='name'>Zhang_Yao_Yao<em class='gold'></em></a>
                             <div class="intro"> 双鱼座，资深神经病。<br>(*/ω＼*)</div>
                         </div>
                     </li>
                     <li>
-                        <a href='https://www.leiphone.com/author/AI%E7%A0%94%E4%B9%A0%E7%A4%BE394' target="_blank" class="avater">
+                        <a href='#' target="_blank" class="avater">
                             <img src="img/tempo.jpg" width="70" height="70" />
                         </a>
                         <div class="txt">
-                            <a href="https://www.leiphone.com/author/AI%E7%A0%94%E4%B9%A0%E7%A4%BE394" target="_blank" class='name'>Tempo<em class='gold'></em></a>
+                            <a href="#" target="_blank" class='name'>Tempo<em class='gold'></em></a>
                             <div class="intro">WE特邀作者、影评达人。</div></div>
                     </li>
                 </ul>
@@ -585,22 +559,20 @@
         <div class="serKesy-list">
             <div class="rComTitle">热门搜索</div>
             <div class="list clr">
-                <a href="http://baike.baidu.com/link?url=GrDC9uLNCNzSy_Kj8f4xIx1nRLQDx5mjTw7bLQ-F_k6zq9vtBzCITZfJamBQySxiDCxQSYq-DVSq9xMD3LWCV0cCiBW2cHSGGxMdcGp4phKpVtCzqCOgl5gXv-WnU_llQdKww0gbbBhnxkbowmEwkoIjeRthW4bdLyceTCMW2Pw6lFmigvR3UpZm72rjxGAHFt5GfncaGkqjOdsq_l2kdrGuyOYIqZX0pngoXboWlpQxigb0iCyjxVVjNTXYZ3Yjc4OEymep45iafqzK6lCi2pKt4tqrwhRQ9D641l0iwK_" target="_blank">变形金刚5</a>
-                <a href="https://www.leiphone.com/tag/专利" target="_blank">戛纳</a>
-                <a href="https://www.leiphone.com/tag/zynga" target="_blank">深夜食堂</a>
-                <a href="https://www.leiphone.com/tag/HoloLens" target="_blank">神奇女侠</a>
-                <a href="https://www.leiphone.com/tag/浏览器" target="_blank">即将上映</a>
-                <a href="https://www.leiphone.com/tag/人脸识别" target="_blank">建军大业</a>
-                <a href="https://www.leiphone.com/tag/视频" target="_blank">异形·契约</a>
-                <a href="https://www.leiphone.com/tag/计算机视觉" target="_blank">神偷奶爸3</a>
-                <a href="https://www.leiphone.com/tag/中移动" target="_blank">嫌疑人X的献身</a>
-                <a href="https://www.leiphone.com/tag/电子书" target="_blank">你的名字</a>
+                <a href="#" target="_blank">变形金刚5</a>
+                <a href="#" target="_blank">戛纳</a>
+                <a href="#" target="_blank">深夜食堂</a>
+                <a href="#" target="_blank">神奇女侠</a>
+                <a href="#" target="_blank">即将上映</a>
+                <a href="#" target="_blank">建军大业</a>
+                <a href="#" target="_blank">异形·契约</a>
+                <a href="#" target="_blank">神偷奶爸3</a>
+                <a href="#" target="_blank">嫌疑人X的献身</a>
+                <a href="#" target="_blank">你的名字</a>
             </div>
         </div>
     </div>
 </div>
-
-
 
 
 <!--footer-->
@@ -610,7 +582,7 @@
             <div class="title f-cb">
                 TheWoie电影资讯
             </div>
-            <p class="cprt">©2017 innovation.org  LOL ICP备0000000号-1</br>icourses.cn 京ICP备33333333号-2 京公网安备12345678-2</p>
+            <p class="cprt">©2017 innovation.org theWovie</br>members：panaiwang zhangyuhang lvtong</p>
         </div>
 
         <div class="ftright f-cb">
