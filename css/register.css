@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>用户登录</title>
-<link rel="stylesheet" type="text/css" href="css/common.css">
-
-
-<style>
-
-
 body{font:13px/26px "微软雅黑";background: #F5F7FA}
 *:focus {outline: none;}
 .contact{width:680px;background:#F1F1F1;margin: 100px auto;padding:10px;}
@@ -90,49 +79,5 @@ body{font:13px/26px "微软雅黑";background: #F5F7FA}
 	border: 1px solid #20911e;
 	box-shadow: 0 0 10px 5px #356b0b inset;
 }
-</style>
-
-</head>
-
-<body>
-<div class="contact">
-<form class="contact_form" action="index.html" method="post" name="contact_form">
-    <ul>
-        <li>
-            <h2>用户登录</h2>
-        </li>
-       	<li>
-            <label for="tel">手机号码</label>
-            <input type="tel" name="tel" id="tel" placeholder="1**********" required pattern="^1[345678][0-9]{9}$"/>
-            <span class="form_hint">正确格式为：1**********</span>
-        </li>
-        <li>
-            <label for="pasword">密码:</label>
-            <input type="password" name="password" id="password" placeholder="*******" required />
-            <span class="form_hint">正确格式为：6~18个字符</span>
-        </li>
-        <li>
-        	<button class="submit" type="button" onclick="login()">登录</button>
-        </li>
-    </ul>
-</form>
-</div>
-</body>
-<script>
-	function login(){
-		
-		if(typeof(Storage) !== "undefined"){
-			if(localStorage.getItem("tel") == (document.getElementById("tel").value) && localStorage.getItem("password") == (document.getElementById("password").value)){
-				location.href="index.html"
-			}else{
-				alert("tel or password error!   :(");
-			}
-		}else
-		{
-			alert("您的浏览器不支持客户端存储");
-		}
-
-    }
-
-</script>
-</html>
+.login{color: #11999E;font-size: 14px;margin-left: 5px;}
+.login:hover{color: #30E3CA}

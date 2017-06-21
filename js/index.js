@@ -19,6 +19,21 @@ function change(){
     document.getElementById("ad").style.backgroundColor = bg();
 }
 
+
+// 二级菜单
+$(document).ready(function(){
+    $(".user").click(function(){
+        if($(".menu").attr("one") == "hide"){
+            $(".menu").css("display","block");
+            $(".menu").attr("one","show");
+        }else{
+            $(".menu").css("display","none");
+            $(".menu").attr("one","hide");
+        }
+            
+    });
+});
+
 //点击 加载更多
 $(document).ready(function(){
     $(".loadMore").click(function(){
@@ -27,3 +42,5 @@ $(document).ready(function(){
         $(".loadMore").css("display","none");
     });
 });
+
+
