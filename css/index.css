@@ -1,7 +1,7 @@
 *{ margin: 0; padding: 0; text-decoration: none;}
 
 /*广告栏*/
-#ad{height: 200px; text-align: center;padding-top: 20px;}
+#ad{height: 200px; text-align: center;padding-top: 20px;display: none;}
 
 /* 导航 */
 .topbar{width:100%;background:rgba(12,13,14,0.86);height:40px;line-height:1;font-size:13px}
